@@ -1,0 +1,48 @@
+<script type="text/x-red" data-template-name="my-node">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="Topic">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-onDelayTime"><i class="icon-tag"></i> ON Delay</label>
+        <input type="number" id="node-input-onDelay" placeholder="ON Delay">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-offDelay"><i class="icon-tag"></i> OFF Delay</label>
+        <input type="number" id="node-input-offDelay" placeholder="OFF Delay">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="my-node">
+    <p>Configuration Settings to Connect to an Edge device</p>
+</script>
+
+<script type="text/javascript">
+
+    RED.nodes.registerType('my-node', {
+        category: 'NubeIO',
+        color: '#3FADB5',
+        defaults: {
+            name: {value: ""},
+            topic: {value: ""},
+            onDelay: {value: ""},
+            offDelay: {value: ""}
+        },
+        label: function() {
+            return this.name || '';
+        },
+        inputs: 1,
+        outputs: 1,
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        },
+    });
+</script>
+

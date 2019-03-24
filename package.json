@@ -1,0 +1,16 @@
+{
+  "name": "node-red-contrib-my-node",
+  "version": "1.0.0",
+  "description": "My node red node",
+  "main": "my-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "lower-case": "my-node.js"
+    }
+  },
+  "author": "Thuan",
+  "license": "ISC"
+}
