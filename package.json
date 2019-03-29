@@ -9,7 +9,8 @@
     "nodes": {
       "delay-on-off": "nodes/delay-on-off.js",
       "check-sum": "nodes/check-sum.js",
-      "decoder": "nodes/decoder.js"
+      "decoder": "nodes/decoder.js",
+      "decoder2": "nodes/decoder2.js"
     }
   },
   "author": "Thuan Nguyen",
